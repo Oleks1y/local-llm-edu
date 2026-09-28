@@ -25,7 +25,7 @@
 @media(max-width:390px){.slide{padding-left:18px;padding-right:18px}.slide::before{left:18px;right:18px}.slide-number{right:18px}.pill{font-size:13px}.compare{font-size:14px}.compare th,.compare td{padding:10px 5px}.example-text{font-size:20px}}
 .split>*,.grid>*,.slide-inner{min-width:0}.mobile-flow{display:none}.slide:has(.card.peach) .takeaway,.slide:has(.node.strong) .takeaway{background:var(--mist);color:var(--ink)}
 @media(max-width:719px){.responsive-diagram svg{display:none}.mobile-flow{display:flex;flex-direction:column;align-items:stretch;gap:10px}.mobile-flow span{display:block;padding:17px 18px;border:1px solid var(--hair);border-radius:12px;background:#fff;font-size:17px;line-height:1.3}.mobile-flow span.warm{background:var(--peach);color:var(--sienna);border-color:var(--peach)}.mobile-flow b{text-align:center;color:var(--sienna);font-size:20px;font-weight:400;line-height:1}}
-@media(max-width:719px){.compare thead{display:none}.compare,.compare tbody,.compare tr,.compare td{display:block;width:100%}.compare tr{border:1px solid var(--hair);border-radius:16px;padding:12px 15px;margin:0 0 12px}.compare td{border:0!important;padding:7px 0!important;display:grid;grid-template-columns:105px minmax(0,1fr);gap:10px;font-size:16px}.compare td::before{font-size:13px;color:var(--muted);font-weight:400}#slide-7 .compare td:nth-child(1)::before{content:'Підхід'}#slide-7 .compare td:nth-child(2)::before{content:'Де працює'}#slide-7 .compare td:nth-child(3)::before{content:'Перевага'}#slide-7 .compare td:nth-child(4)::before{content:'Врахувати'}#slide-23 .compare td:nth-child(1)::before{content:'Проблема'}#slide-23 .compare td:nth-child(2)::before{content:'Крок'}#slide-23 .compare td:nth-child(3)::before{content:'Перевірка'}}
+@media(max-width:719px){.compare thead{display:none}.compare,.compare tbody,.compare tr,.compare td{display:block;width:100%}.compare tr{border:1px solid var(--hair);border-radius:16px;padding:12px 15px;margin:0 0 12px}.compare td{border:0!important;padding:7px 0!important;display:grid;grid-template-columns:105px minmax(0,1fr);gap:10px;font-size:16px}.compare td::before{font-size:13px;color:var(--muted);font-weight:400}#slide-7 .compare td:nth-child(1)::before{content:'Підхід'}#slide-7 .compare td:nth-child(2)::before{content:'Де працює'}#slide-7 .compare td:nth-child(3)::before{content:'Перевага'}#slide-7 .compare td:nth-child(4)::before{content:'Врахувати'}#slide-24 .compare td:nth-child(1)::before{content:'Проблема'}#slide-24 .compare td:nth-child(2)::before{content:'Крок'}#slide-24 .compare td:nth-child(3)::before{content:'Перевірка'}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 .tech-note{display:grid;grid-template-columns:142px minmax(0,1fr) auto;gap:18px;align-items:start;margin-top:22px;padding:16px 0 0;border-top:1px solid var(--hair);color:var(--ink)}
 .tech-label{font-size:12px;line-height:1.35;letter-spacing:.11em;text-transform:uppercase;font-weight:500;color:var(--sienna)}
@@ -33,8 +33,8 @@
 .tech-note a{font-size:13px;line-height:1.35;color:var(--sienna);white-space:nowrap;text-decoration:none;border-bottom:1px solid currentColor}
 .slide-inner.split>.tech-note{grid-column:1/-1}
 .slide-inner.split{row-gap:18px}
-#slide-24 h2,#slide-25 h2,#slide-26 h2{font-size:clamp(42px,3.65vw,62px);line-height:1.08}
-#slide-22 .card{padding:15px 21px}#slide-22 .process{margin:18px 0}#slide-22 .takeaway{margin-top:12px;padding:13px 20px}#slide-22 .tech-note{margin-top:13px}
+#slide-25 h2,#slide-26 h2,#slide-27 h2{font-size:clamp(42px,3.65vw,62px);line-height:1.08}
+#slide-23 .card{padding:15px 21px}#slide-23 .process{margin:18px 0}#slide-23 .takeaway{margin-top:12px;padding:13px 20px}#slide-23 .tech-note{margin-top:13px}
 .dark-slide .tech-note{border-color:#50545a;color:#f2f2f3}.dark-slide .tech-label,.dark-slide .tech-note a{color:var(--peach)}
 @media(min-width:720px){.slide{padding-top:clamp(28px,4vh,58px);padding-bottom:clamp(78px,9vh,112px)}.slide-number{top:clamp(28px,4vh,58px)}h2{font-size:clamp(44px,4.3vw,74px);margin-bottom:20px}.lead{font-size:clamp(22px,1.9vw,30px)}.card{padding:clamp(20px,2vw,34px)}.card .body{font-size:clamp(17px,1.25vw,21px)}.takeaway{margin-top:20px;padding:16px 22px;font-size:clamp(18px,1.4vw,22px)}.process{margin:23px 0}.process .node{padding:18px 17px}.compare td{padding:13px 10px}.compare th{padding:11px 10px}.timeline{margin-top:24px}.timeline .stage{padding-top:16px}.timeline .stage p{font-size:clamp(17px,1.2vw,20px)}}
 @media(max-width:719px),(max-height:589px){.tech-note{grid-template-columns:1fr;gap:8px;margin-top:24px;padding-top:16px}.tech-note p{font-size:17px;line-height:1.4}.tech-note a{white-space:normal;justify-self:start}.slide-inner.split>.tech-note{grid-column:auto}}
@@ -84,13 +84,41 @@
 @media(max-width:719px),(max-height:589px){.market-landscape .eyebrow{margin-bottom:18px}.market-landscape h2{font-size:clamp(38px,9vw,58px);line-height:1.06;margin-bottom:14px}.market-intro{align-items:flex-start;flex-direction:column;gap:9px;margin-bottom:18px}.market-intro p{font-size:16px}.market-grid{grid-template-columns:1fr;gap:12px}.market-panel{padding:12px 10px}.market-panel-title{font-size:12px;margin-bottom:8px}.market-table{display:block;font-size:14px}.market-table thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.market-table tbody{display:grid;gap:6px}.market-table tbody tr{display:grid;grid-template-columns:30px minmax(0,1fr) auto;grid-template-areas:'rank model score' 'rank context access';align-items:center;gap:3px 7px;padding:8px 9px;border:1px solid #dedee0;border-radius:10px;background:#fff}.market-table tbody tr.market-open-row{background:#fff8f4}.market-table tbody th{grid-area:rank;grid-row:1 / span 2;align-self:start;padding:2px 0 0;border:0;font-size:13px}.market-table tbody td{padding:0;border:0}.market-table tbody td:nth-child(2){grid-area:model;min-width:0}.market-table tbody td:nth-child(3){grid-area:score;display:flex;align-items:baseline;gap:5px;text-align:right;font-size:14px}.market-table tbody td:nth-child(3)::before{content:'Індекс';font-size:10px;color:var(--muted);font-weight:400}.market-table tbody td:nth-child(4){grid-area:context;white-space:nowrap;font-size:11px;color:var(--muted)}.market-table tbody td:nth-child(4)::before{content:'Контекст: ';color:var(--muted)}.market-table tbody td:nth-child(5){grid-area:access;justify-self:end;white-space:nowrap}.market-table tbody td:nth-child(5)::before{content:'Доступ: ';font-size:10px;color:var(--muted)}.market-table .market-model{font-size:14px;white-space:normal;overflow:visible;text-overflow:clip}.market-table .market-meta{font-size:11px;line-height:1.25;white-space:normal;overflow:visible;text-overflow:clip;margin-top:2px}.market-access{font-size:10px;padding:2px 5px}.market-note{grid-template-columns:1fr;gap:6px;margin-top:16px;padding-top:14px}.market-note-label{font-size:11px}.market-note p{font-size:15px;line-height:1.4}.market-source{font-size:12px;line-height:1.35}}
 @media(min-width:720px){.market-table{font-size:clamp(12px,.84vw,14px)}.market-table .market-meta{font-size:clamp(10px,.66vw,11px)}}
 @media(min-width:720px) and (max-height:760px){.market-intro{margin-bottom:9px}.market-grid{gap:10px}.market-panel{padding:7px 10px}.market-panel-title{margin-bottom:3px}.market-table thead th{padding:3px}.market-table td,.market-table tbody th{padding:3px}.market-note{margin-top:7px;padding-top:7px}}
+
+.inference-slide .inference-title{font-size:clamp(42px,4vw,66px);line-height:1.05;margin:0 0 8px;max-width:none}
+.inference-subtitle{font-size:clamp(16px,1.2vw,20px);line-height:1.35;color:var(--muted);margin:0}
+.inference-flow{display:grid;grid-template-columns:minmax(0,1fr) 28px minmax(0,2.15fr) 28px minmax(0,1fr);gap:10px;align-items:stretch;margin:15px 0 10px}
+.inference-panel{min-width:0;padding:14px;border:1px solid var(--hair);border-radius:18px;background:var(--mist)}
+.inference-index{font-size:11px;line-height:1.25;font-weight:500;letter-spacing:.09em;color:var(--sienna);margin:0 0 8px}
+.inference-panel h3{font-size:clamp(19px,1.45vw,25px);line-height:1.12;margin:0 0 12px}
+.inference-node{display:grid;gap:4px;padding:9px 11px;border:1px solid #dedee0;border-radius:12px;background:#fff;line-height:1.28}
+.inference-node strong,.inference-operation strong,.inference-next-token strong{font-size:clamp(14px,1vw,17px);font-weight:500}
+.inference-node span,.inference-operation span{font-size:clamp(12px,.9vw,15px);line-height:1.3;color:var(--muted)}
+.inference-node code,.inference-formula{font-family:var(--sans);font-size:.96em;color:var(--sienna)}
+.inference-down{height:16px;display:grid;place-items:center;color:var(--sienna);font-size:18px;line-height:1}
+.inference-connector{display:grid;place-items:center;color:var(--sienna);font-size:26px}
+.inference-panel-core{background:#fff;border-color:#d8d8da}
+.inference-operations{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:10px;align-items:stretch}
+.inference-operation{display:grid;align-content:start;gap:7px;min-width:0;padding:11px;border:1px solid var(--hair);border-radius:13px;background:#f7f7f8}
+.inference-formula{display:block;padding:8px 7px;border-radius:8px;background:#fff;font-size:clamp(12px,.9vw,15px);line-height:1.3;overflow-wrap:anywhere}
+.inference-residual{font-size:clamp(12px,.88vw,14px);line-height:1.3;color:var(--muted);margin:8px 0 0}
+.inference-panel-output{background:#fff8f4;border-color:#efcdbb}
+.inference-next-token{padding:12px;border-radius:12px;background:var(--peach);color:var(--sienna);line-height:1.25}
+.inference-loop{display:flex;align-items:center;justify-content:center;gap:12px;padding:9px 15px;border-radius:13px;background:var(--mist);font-size:clamp(13px,1vw,16px);line-height:1.3;text-align:center}
+.inference-loop strong{font-weight:500}.inference-loop>span:nth-child(2){font-size:23px;color:var(--sienna)}
+.inference-term{font-weight:500;color:var(--sienna)}
+#slide-14 .tech-note{grid-template-columns:142px minmax(0,1fr) minmax(160px,auto);gap:12px;margin-top:8px;padding-top:9px}
+#slide-14 .tech-note p{font-size:clamp(13px,.95vw,16px);line-height:1.3}
+#slide-14 .inference-sources{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px 10px}
+@media(max-width:1000px) and (min-width:720px){.inference-flow{grid-template-columns:minmax(0,.9fr) 20px minmax(0,1.9fr) 20px minmax(0,.9fr);gap:6px}.inference-panel{padding:11px}.inference-operations{grid-template-columns:1fr}.inference-panel h3{font-size:19px}.inference-node{padding:9px}.inference-node strong,.inference-operation strong,.inference-next-token strong{font-size:14px}}
+@media(max-width:719px),(max-height:589px){.inference-slide .inference-title{font-size:clamp(38px,9vw,58px);line-height:1.07;margin-bottom:12px}.inference-flow{grid-template-columns:minmax(0,1fr);gap:8px;margin:20px 0 14px}.inference-panel{padding:15px}.inference-panel h3{font-size:23px}.inference-node strong,.inference-operation strong,.inference-next-token strong{font-size:16px}.inference-node span,.inference-operation span{font-size:15px}.inference-connector{height:20px;transform:rotate(90deg)}.inference-operations{grid-template-columns:1fr}.inference-formula{font-size:14px}.inference-residual{font-size:14px}.inference-loop{display:grid;grid-template-columns:1fr 25px 1fr;gap:6px;padding:12px 8px;font-size:13px}.inference-loop>span:nth-child(2){transform:rotate(180deg)}#slide-14 .tech-note{grid-template-columns:1fr;gap:8px;margin-top:22px;padding-top:16px}#slide-14 .tech-note p{font-size:16px;line-height:1.4}#slide-14 .inference-sources{justify-content:flex-start}}
 </style>
 </head>
 <body>
   <a class="skip-link" href="#slide=1">До презентації</a>
   <main id="deck" aria-label="Презентація про локальні LLM">
     <section class="slide dark-slide" id="slide-1" aria-labelledby="title-1">
-      <span class="slide-number">01 / 31</span><div class="slide-inner">
+      <span class="slide-number">01 / 32</span><div class="slide-inner">
         <p class="eyebrow">Вступ для бізнесу · 60 хвилин</p>
         <h1 id="title-1">Локальні LLM:<br><span class="italic">зрозуміти,</span> перш ніж обирати</h1>
         <p class="lead muted">Як працює мовна модель, що означає її запуск на власному комп’ютері та як обрати підхід до реальної задачі.</p>
@@ -98,7 +126,7 @@
 </div>
     </section>
     <section class="slide self-check-slide" id="slide-2" aria-labelledby="title-2">
-      <span class="slide-number">02 / 31</span><div class="slide-inner">
+      <span class="slide-number">02 / 32</span><div class="slide-inner">
         <p class="eyebrow">Очікуваний результат · 1 із 3</p>
         <h2 id="title-2">Важливі 32 питання для створення ТЗ</h2>
         <p class="self-check-intro">Питання 1–11 · бізнес-задача, користувачі, дані й безпека.</p>
@@ -128,7 +156,7 @@
       </div>
     </section>
     <section class="slide self-check-slide" id="slide-3" aria-labelledby="title-3">
-      <span class="slide-number">03 / 31</span><div class="slide-inner">
+      <span class="slide-number">03 / 32</span><div class="slide-inner">
         <p class="eyebrow">Очікуваний результат · 2 із 3</p>
         <h2 id="title-3">Документи, моделі та обчислювальні ресурси</h2>
         <p class="self-check-intro">Питання 12–24 · пошук, інтеграції, пам’ять, швидкість і масштабування.</p>
@@ -160,7 +188,7 @@
       </div>
     </section>
     <section class="slide self-check-slide" id="slide-4" aria-labelledby="title-4">
-      <span class="slide-number">04 / 31</span><div class="slide-inner">
+      <span class="slide-number">04 / 32</span><div class="slide-inner">
         <p class="eyebrow">Очікуваний результат · 3 із 3</p>
         <h2 id="title-4">Якість відповідей, підтримка й повна вартість</h2>
         <p class="self-check-intro">Питання 25–32 · надійність, людський контроль, SLA та приймання робіт.</p>
@@ -187,7 +215,7 @@
       </div>
     </section>
     <section class="slide market-landscape" id="slide-5" aria-labelledby="title-5">
-      <span class="slide-number">05 / 31</span><div class="slide-inner">
+      <span class="slide-number">05 / 32</span><div class="slide-inner">
         <p class="eyebrow">Ландшафт моделей · зріз 28 вересня 2026</p>
         <h2 id="title-5">Топ-20 передових моделей: API й відкриті ваги</h2>
         <div class="market-intro"><p>Artificial Analysis ранжує конфігурації моделей: одна родина може мати кілька рядків.</p><span class="market-stat">19 закритих <i>·</i> 1 з відкритими вагами</span></div>
@@ -239,7 +267,7 @@
       </div>
     </section>
     <section class="slide" id="slide-6" aria-labelledby="title-6">
-      <span class="slide-number">06 / 31</span><div class="slide-inner split wide-left">
+      <span class="slide-number">06 / 32</span><div class="slide-inner split wide-left">
         <div><p class="eyebrow">Визначення</p><h2 id="title-6">Модель — це навчена система прогнозування тексту</h2><p class="lead">Вона отримує контекст і послідовно обирає наступні частини відповіді.</p><p class="body muted">Локальна модель виконує ці обчислення на вашому Mac або власному сервері.</p></div>
         <div class="diagram responsive-diagram" role="img" aria-label="Запит надходить до моделі на власному комп’ютері, а відповідь повертається без хмарного сервера">
           <svg viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg"><rect x="22" y="36" width="170" height="68" rx="14" class="tile"/><text x="107" y="77" text-anchor="middle" class="large-label">Запит</text><path d="M194 70h78" class="warm-stroke"/><path d="m260 59 15 11-15 11" class="warm-stroke"/><rect x="284" y="23" width="170" height="96" rx="18" class="warm-tile"/><text x="369" y="63" text-anchor="middle" class="large-label warm-text">LLM</text><text x="369" y="88" text-anchor="middle" class="sub-label">на вашому Mac</text><path d="M365 122v74" class="warm-stroke"/><path d="m354 184 11 15 11-15" class="warm-stroke"/><rect x="238" y="210" width="216" height="82" rx="16" class="tile"/><text x="346" y="258" text-anchor="middle" class="large-label">Відповідь</text><text x="30" y="268" class="sub-label">Обчислення відбувається тут</text></svg><div class="mobile-flow"><span>Запит</span><b>↓</b><span class="warm">LLM на вашому Mac</span><b>↓</b><span>Відповідь</span></div>
@@ -248,7 +276,7 @@
 </div>
     </section>
     <section class="slide" id="slide-7" aria-labelledby="title-7">
-      <span class="slide-number">07 / 31</span><div class="slide-inner">
+      <span class="slide-number">07 / 32</span><div class="slide-inner">
         <p class="eyebrow">Де виконується модель</p><h2 id="title-7">Хмара, власний контур або їх поєднання</h2>
         <table class="compare"><thead><tr><th>Підхід</th><th>Де працює модель</th><th>Що отримує бізнес</th><th>Що потрібно врахувати</th></tr></thead><tbody>
           <tr><td>Хмарний сервіс</td><td>У постачальника</td><td>Швидкий старт, готовий сервіс</td><td>Передача даних, умови сервісу, змінні витрати</td></tr>
@@ -260,7 +288,7 @@
 </div>
     </section>
     <section class="slide" id="slide-8" data-steps="2" aria-labelledby="title-8">
-      <span class="slide-number">08 / 31</span><div class="slide-inner">
+      <span class="slide-number">08 / 32</span><div class="slide-inner">
         <p class="eyebrow">Як народжується текст</p><h2 id="title-8">Модель працює з токенами</h2>
         <p class="lead">Токен — частина тексту. Він може бути словом, частиною слова, знаком або пробілом.</p>
         <div class="example"><div class="example-label">Ілюстрація, не точна токенізація конкретної моделі</div><div class="token-line"><span class="token">Підсумуй</span><span class="token">рішення</span><span class="token">зустрічі</span><span class="token">.</span><span class="token active reveal" data-step="1">→</span><span class="token active reveal" data-step="1">Команда</span><span class="token active reveal" data-step="2">вирішила…</span></div></div>
@@ -269,7 +297,7 @@
 </div>
     </section>
     <section class="slide" id="slide-9" data-steps="1" aria-labelledby="title-9">
-      <span class="slide-number">09 / 31</span><div class="slide-inner split">
+      <span class="slide-number">09 / 32</span><div class="slide-inner split">
         <div><p class="eyebrow">Пошук за змістом</p><h2 id="title-9">Схожий зміст можна розташувати поруч</h2><p class="lead">Векторне представлення — набір чисел, який допомагає системі порівнювати тексти за змістом.</p><p class="body muted">Це особливо корисно для пошуку документів у RAG.</p></div>
         <div class="diagram responsive-diagram" role="img" aria-label="На карті змісту запит про підсумок наради розташований ближче до протоколу зустрічі, ніж до рахунку">
           <svg viewBox="0 0 510 400" xmlns="http://www.w3.org/2000/svg"><path d="M40 350h420M55 365V35" class="stroke"/><circle cx="130" cy="115" r="8" fill="#777b86"/><text x="145" y="110" class="label">Рахунок</text><circle cx="337" cy="252" r="11" fill="#5d2a1a"/><text x="355" y="243" class="label warm-text">Запит</text><circle cx="368" cy="285" r="8" fill="#17191c"/><text x="284" y="320" class="label">Протокол</text><circle cx="298" cy="294" r="8" fill="#17191c"/><text x="188" y="331" class="label">Рішення</text><circle cx="334" cy="259" r="72" fill="none" stroke="#5d2a1a" stroke-width="2" stroke-dasharray="7 6" class="reveal" data-step="1"/><text x="75" y="45" class="sub-label">умовна карта, не реальні координати</text></svg><div class="mobile-flow"><span class="warm">Запит: підсумок наради</span><b>↓</b><span>Ближче за змістом: протокол і рішення</span><span>Далі за змістом: рахунок</span></div>
@@ -278,7 +306,7 @@
 </div>
     </section>
     <section class="slide" id="slide-10" data-steps="2" aria-labelledby="title-10">
-      <span class="slide-number">10 / 31</span><div class="slide-inner">
+      <span class="slide-number">10 / 32</span><div class="slide-inner">
         <p class="eyebrow">Механізм усередині</p><h2 id="title-10">Attention: які слова зараз важливі?</h2>
         <div class="split wide-left">
           <div class="diagram responsive-diagram" role="img" aria-label="У реченні займенник вона пов’язується зі словом директорка">
@@ -290,7 +318,7 @@
 </div>
     </section>
     <section class="slide" id="slide-11" data-steps="1" aria-labelledby="title-11">
-      <span class="slide-number">11 / 31</span><div class="slide-inner">
+      <span class="slide-number">11 / 32</span><div class="slide-inner">
         <p class="eyebrow">Обмеження розмови</p><h2 id="title-11">Контекстне вікно — це робочий стіл моделі</h2>
         <div class="process"><div class="node"><h3>Інструкція</h3><p>Що потрібно зробити</p></div><span class="arrow">→</span><div class="node"><h3>Ваше запитання</h3><p>Поточна задача</p></div><span class="arrow">→</span><div class="node strong reveal" data-step="1"><h3>Додані дані</h3><p>Історія, документи, уривки</p></div><span class="arrow">→</span><div class="node"><h3>Відповідь</h3><p>Теж займає місце</p></div></div>
         <div class="grid two"><div class="card soft"><h3>Більше контексту</h3><p class="body">Можна дати більше матеріалу, але обробка потребує часу й пам’яті.</p></div><div class="card soft"><h3>Не постійна пам’ять</h3><p class="body">Якщо даних немає у вікні або зовнішній системі, модель не «пам’ятає» їх як людина.</p></div></div>
@@ -298,7 +326,7 @@
 </div>
     </section>
     <section class="slide" id="slide-12" aria-labelledby="title-12">
-      <span class="slide-number">12 / 31</span><div class="slide-inner">
+      <span class="slide-number">12 / 32</span><div class="slide-inner">
         <p class="eyebrow">Критичне мислення</p><h2 id="title-12">Переконлива відповідь може бути хибною</h2>
         <div class="grid three"><div class="card soft"><h3>Варіативність</h3><p class="body">Налаштування вибору токенів впливають на те, наскільки схожими будуть повторні відповіді.</p></div><div class="card soft"><h3>Галюцинація</h3><p class="body">Модель може впевнено сформулювати твердження без достатнього підтвердження.</p></div><div class="card peach"><h3>Перевірка</h3><p class="body">Просіть джерела, звіряйте факти й тестуйте на власних прикладах задачі.</p></div></div>
         <p class="takeaway">Гарний стиль відповіді не є доказом її правильності.</p>
@@ -306,79 +334,124 @@
 </div>
     </section>
     <section class="slide" id="slide-13" data-steps="2" aria-labelledby="title-13">
-      <span class="slide-number">13 / 31</span><div class="slide-inner">
+      <span class="slide-number">13 / 32</span><div class="slide-inner">
         <p class="eyebrow">Життєвий цикл</p><h2 id="title-13">Модель не з’являється готовим співрозмовником</h2>
         <div class="timeline"><div class="stage"><div class="index">01 / ПОПЕРЕДНЄ НАВЧАННЯ</div><h3>Вивчити закономірності</h3><p>Модель тренується передбачати продовження на великих масивах даних.</p></div><div class="stage reveal" data-step="1"><div class="index">02 / ІНСТРУКЦІЇ · SFT</div><h3>Навчитися відповідати</h3><p>Приклади запитів і відповідей допомагають виконувати людські завдання.</p></div><div class="stage reveal" data-step="2"><div class="index">03 / ПОДАЛЬШЕ НАЛАШТУВАННЯ · RL</div><h3>Поліпшити поведінку</h3><p>Оцінювання людьми, винагороди та перевірювані задачі коригують відповіді.</p></div></div>
         <p class="takeaway">Це різні етапи навчання. Локальний запуск готової моделі — ще один, окремий етап.</p>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>На попередньому навчанні оптимізують помилку прогнозу токена та оновлюють ваги градієнтом. SFT використовує приклади інструкцій; наступне налаштування може спиратися на людські переваги або перевірювану винагороду. Конкретний рецепт відрізняється між моделями.</p><a href="https://huggingface.co/docs/trl/en/quickstart" target="_blank" rel="noopener">Hugging Face: TRL ↗</a></aside>
 </div>
     </section>
-    <section class="slide" id="slide-14" data-steps="1" aria-labelledby="title-14">
-      <span class="slide-number">14 / 31</span><div class="slide-inner split">
-        <div><p class="eyebrow">Адаптація поведінки</p><h2 id="title-14">Fine-tuning змінює параметри моделі</h2><p class="lead">Ми даємо приклади бажаних відповідей і донавчаємо модель поводитися подібно.</p><p class="body muted">LoRA навчає невеликий додатковий набір параметрів. Це часто дешевше, ніж оновлювати всю модель.</p></div>
+    <section class="slide inference-slide" id="slide-14" aria-labelledby="title-14">
+      <span class="slide-number">14 / 32</span><div class="slide-inner">
+        <p class="eyebrow">Інференс · виконання готової моделі</p>
+        <h2 class="inference-title" id="title-14">Як LLM крок за кроком генерує текст</h2>
+        <p class="inference-subtitle">Типовий шлях decoder-only Transformer. Деталі різняться між архітектурами.</p>
+        <div class="inference-flow" role="group" aria-label="Від вхідного тексту через блоки Transformer до вибору наступного токена та повтору генерації">
+          <article class="inference-panel">
+            <p class="inference-index">01 · ПІДГОТОВКА</p><h3>Текст → вектори</h3>
+            <div class="inference-node"><strong>Шаблон чату</strong><span>Ролі та службові межі повідомлень</span></div>
+            <div class="inference-down" aria-hidden="true">↓</div>
+            <div class="inference-node"><strong>Токенізація</strong><span>Текст → послідовність ID токенів <code>[t₁, t₂, …]</code></span></div>
+            <div class="inference-down" aria-hidden="true">↓</div>
+            <div class="inference-node"><strong>Embedding + позиція</strong><span>ID → вектори; позиційний сигнал, наприклад RoPE</span></div>
+          </article>
+          <div class="inference-connector" aria-hidden="true">→</div>
+          <article class="inference-panel inference-panel-core">
+            <p class="inference-index">02 · ПОВТОРЮВАНИЙ БЛОК × L</p><h3>Transformer-decoder</h3>
+            <div class="inference-operations">
+              <div class="inference-operation">
+                <strong>Маскована self-attention</strong>
+                <span>Q, K, V — проєкції контекстних векторів</span>
+                <code class="inference-formula">softmax((QKᵀ / √dₖ) + M) · V</code>
+                <span>Причинна маска M блокує майбутні позиції.</span>
+              </div>
+              <div class="inference-operation">
+                <strong>MLP / Feed-forward</strong>
+                <span>Перетворює представлення кожної позиції; нелінійність залежить від моделі.</span>
+              </div>
+            </div>
+            <p class="inference-residual">Залишкові зв’язки + нормалізація — навколо підблоків; точний порядок залежить від архітектури.</p>
+          </article>
+          <div class="inference-connector" aria-hidden="true">→</div>
+          <article class="inference-panel inference-panel-output">
+            <p class="inference-index">03 · НАСТУПНИЙ ТОКЕН</p><h3>Оцінка → вибір</h3>
+            <div class="inference-node"><strong>LM head → logits</strong><span>Оцінки для токенів словника</span></div>
+            <div class="inference-down" aria-hidden="true">↓</div>
+            <div class="inference-node"><strong>Розподіл і декодування</strong><span>Softmax; argmax або семплювання. Temperature і top-p змінюють вибір.</span></div>
+            <div class="inference-down" aria-hidden="true">↓</div>
+            <div class="inference-next-token"><strong>Обрати ID наступного токена</strong></div>
+          </article>
+        </div>
+        <div class="inference-loop"><strong>Новий токен додається до контексту</strong><span aria-hidden="true">↶</span><span>Повторювати до EOS, стоп-умови або ліміту; токенізатор відновлює текст.</span></div>
+        <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p><span class="inference-term">Prefill</span> обробляє запит; <span class="inference-term">decode</span> генерує токени по одному. <span class="inference-term">KV-cache</span> повторно використовує попередні K/V: менше обчислень, більше використаної пам’яті.</p><span class="inference-sources"><a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener">Transformer ↗</a><a href="https://arxiv.org/abs/2104.09864" target="_blank" rel="noopener">RoPE ↗</a><a href="https://huggingface.co/docs/transformers/main_classes/text_generation" target="_blank" rel="noopener">Generation ↗</a><a href="https://huggingface.co/docs/transformers/kv_cache" target="_blank" rel="noopener">KV-cache ↗</a></span></aside>
+      </div>
+    </section>
+    <section class="slide" id="slide-15" data-steps="1" aria-labelledby="title-15">
+      <span class="slide-number">15 / 32</span><div class="slide-inner split">
+        <div><p class="eyebrow">Адаптація поведінки</p><h2 id="title-15">Fine-tuning змінює параметри моделі</h2><p class="lead">Ми даємо приклади бажаних відповідей і донавчаємо модель поводитися подібно.</p><p class="body muted">LoRA навчає невеликий додатковий набір параметрів. Це часто дешевше, ніж оновлювати всю модель.</p></div>
         <div><div class="diagram responsive-diagram" role="img" aria-label="Базова модель разом із невеликим адаптером LoRA створюють спеціалізовану поведінку"><svg viewBox="0 0 540 360" xmlns="http://www.w3.org/2000/svg"><rect x="48" y="35" width="444" height="165" rx="24" class="tile"/><text x="270" y="115" text-anchor="middle" class="large-label">Готова модель</text><text x="270" y="146" text-anchor="middle" class="sub-label">основні параметри</text><rect x="165" y="164" width="210" height="85" rx="18" class="warm-tile reveal" data-step="1"/><text x="270" y="212" text-anchor="middle" class="large-label warm-text reveal" data-step="1">LoRA-адаптер</text><path d="M270 254v45" class="warm-stroke"/><path d="m259 288 11 15 11-15" class="warm-stroke"/><text x="270" y="336" text-anchor="middle" class="large-label">Нова поведінка</text></svg><div class="mobile-flow"><span>Готова модель</span><b>+</b><span class="warm">LoRA-адаптер</span><b>↓</b><span>Спеціалізована поведінка</span></div></div><p class="diagram-caption">Fine-tuning не є найпростішим способом додати актуальні документи: для них частіше підходить RAG.</p></div>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>LoRA залишає базові ваги замороженими й навчає малі низькорангові матриці-доповнення. Це зменшує число параметрів, які треба оновлювати, але все одно вимагає навчальних прикладів, обчислень і окремої оцінки якості.</p><a href="https://arxiv.org/abs/2106.09685" target="_blank" rel="noopener">LoRA, Hu et al. ↗</a></aside>
 </div>
     </section>
-    <section class="slide" id="slide-15" aria-labelledby="title-15">
-      <span class="slide-number">15 / 31</span><div class="slide-inner">
-        <p class="eyebrow">Яку модель ви дивитеся?</p><h2 id="title-15">Тип моделі ≠ місце її запуску</h2>
+    <section class="slide" id="slide-16" aria-labelledby="title-16">
+      <span class="slide-number">16 / 32</span><div class="slide-inner">
+        <p class="eyebrow">Яку модель ви дивитеся?</p><h2 id="title-16">Тип моделі ≠ місце її запуску</h2>
         <div class="grid three"><div class="card soft"><h3>Base</h3><p class="body">Передбачає продовження. Для розмовного помічника зазвичай незручна без додаткового навчання.</p></div><div class="card soft"><h3>Instruct / Chat</h3><p class="body">Навчена виконувати запити й підтримувати діалог. Зручний початок для практикуму.</p></div><div class="card soft"><h3>Мультимодальна</h3><p class="body">Може працювати з текстом та іншими типами даних, наприклад зображеннями.</p></div></div>
         <p class="takeaway">Будь-яка з цих категорій може мати варіант для локального запуску, якщо доступні ваги, відповідний формат і обладнання.</p>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>Base та instruct часто є різними checkpoint одного сімейства. Embedding-модель повертає вектор для пошуку, reranker перевпорядковує знайдене, а VLM додає обробку зображень; жодна з цих ролей сама по собі не визначає місце запуску.</p><a href="https://huggingface.co/learn/llm-course/chapter1/6" target="_blank" rel="noopener">Hugging Face: архітектури ↗</a></aside>
 </div>
     </section>
-    <section class="slide" id="slide-16" aria-labelledby="title-16">
-      <span class="slide-number">16 / 31</span><div class="slide-inner">
-        <p class="eyebrow">Орієнтація в каталозі</p><h2 id="title-16">Назва сімейства — лише початок вибору</h2>
+    <section class="slide" id="slide-17" aria-labelledby="title-17">
+      <span class="slide-number">17 / 32</span><div class="slide-inner">
+        <p class="eyebrow">Орієнтація в каталозі</p><h2 id="title-17">Назва сімейства — лише початок вибору</h2>
         <div class="grid two"><div class="card soft"><h3>Приклади сімейств</h3><p class="body">Qwen, Llama, Gemma, Mistral, DeepSeek. Усередині кожного є різні розміри, версії й призначення.</p><div class="row"><span class="pill">4B</span><span class="pill">Instruct</span><span class="pill">4-bit</span><span class="pill">MLX</span></div></div><div class="card peach"><h3>Що перевірити в картці</h3><ul class="list"><li>Для чого модель створена</li><li>Умови ліцензії</li><li>Мови й обмеження</li><li>Формат файлів і джерело</li></ul></div></div>
         <p class="source">Термін «відкриті ваги» не означає автоматично вільне комерційне використання: умови визначає ліцензія конкретної моделі.</p>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>Читаючи назву, розділяйте сімейство, версію, розмір, тип навчання, квантизацію та формат. «Open weights» повідомляє про доступність ваг, але юридичні права і допустиме комерційне використання визначаються ліцензією конкретного checkpoint.</p><a href="https://huggingface.co/docs/hub/model-cards" target="_blank" rel="noopener">Hugging Face: model cards ↗</a></aside>
 </div>
     </section>
-    <section class="slide" id="slide-17" aria-labelledby="title-17">
-      <span class="slide-number">17 / 31</span><div class="slide-inner split">
-        <div><p class="eyebrow">Ресурси</p><h2 id="title-17">Більша модель зазвичай потребує більше пам’яті</h2><p class="lead">«4B» означає приблизно чотири мільярди параметрів. Саме число не гарантує кращої відповіді.</p><p class="body muted">Потрібна пам’ять також залежить від точності ваг, довжини контексту, кешу та інших процесів на Mac.</p></div>
+    <section class="slide" id="slide-18" aria-labelledby="title-18">
+      <span class="slide-number">18 / 32</span><div class="slide-inner split">
+        <div><p class="eyebrow">Ресурси</p><h2 id="title-18">Більша модель зазвичай потребує більше пам’яті</h2><p class="lead">«4B» означає приблизно чотири мільярди параметрів. Саме число не гарантує кращої відповіді.</p><p class="body muted">Потрібна пам’ять також залежить від точності ваг, довжини контексту, кешу та інших процесів на Mac.</p></div>
         <div class="card soft"><div class="kicker">Умовна шкала</div><div class="memory-comparison" role="img" aria-label="Для умовної моделі з чотирма мільярдами параметрів лише ваги у FP16 займають приблизно вісім гігабайтів, а 4-бітні ваги — теоретично близько двох гігабайтів"><div class="memory-row"><span>4B · FP16</span><div class="memory-track"><i style="width:100%"></i></div><strong>≈ 8 ГБ</strong></div><div class="memory-row"><span>4B · 4-bit</span><div class="memory-track"><i class="warm" style="width:25%"></i></div><strong>≈ 2 ГБ*</strong></div></div><p class="diagram-caption">* Лише теоретичний мінімум для ваг. Реальний запуск вимагає додаткової пам’яті.</p><div class="rule"></div><p class="body">Починайте з невеликої моделі, яка впевнено працює на доступному обладнанні.</p></div>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>Орієнтир для самих ваг: 4 млрд параметрів × 16 біт ≈ 8 ГБ; за 4-бітного зберігання теоретичний мінімум ≈ 2 ГБ. До цього додаються метадані квантизації, KV-cache, проміжні обчислення та пам’ять інших програм.</p><a href="https://huggingface.co/docs/transformers/quantization/concept_guide" target="_blank" rel="noopener">Hugging Face: квантизація ↗</a></aside>
 </div>
     </section>
-    <section class="slide" id="slide-18" data-steps="1" aria-labelledby="title-18">
-      <span class="slide-number">18 / 31</span><div class="slide-inner">
-        <p class="eyebrow">Стиснення ваг</p><h2 id="title-18">Квантизація: менше місця, інша точність</h2>
+    <section class="slide" id="slide-19" data-steps="1" aria-labelledby="title-19">
+      <span class="slide-number">19 / 32</span><div class="slide-inner">
+        <p class="eyebrow">Стиснення ваг</p><h2 id="title-19">Квантизація: менше місця, інша точність</h2>
         <div class="equation"><div class="box">Ті самі параметри<br>зберігаємо точніше</div><span>→</span><div class="box warm reveal" data-step="1">Ті самі параметри<br>зберігаємо компактніше</div></div>
         <div class="grid three"><div class="card soft"><h3>Плюс</h3><p class="body">Менше пам’яті й простіший локальний запуск.</p></div><div class="card soft"><h3>Можлива ціна</h3><p class="body">Якість на частині задач може знизитися; це треба перевіряти.</p></div><div class="card soft"><h3>Позначки</h3><p class="body">4-bit, 8-bit та інші — про спосіб представлення ваг, не про кількість знань.</p></div></div>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>Квантизація замінює точніше числове представлення ваг компактнішим; часто масштаби зберігаються окремо для груп значень. Тому 4-bit не дає рівно чотириразового зменшення всього процесу і може по-різному впливати на задачі.</p><a href="https://huggingface.co/docs/transformers/quantization/concept_guide" target="_blank" rel="noopener">Hugging Face: квантизація ↗</a></aside>
 </div>
     </section>
-    <section class="slide" id="slide-19" data-steps="1" aria-labelledby="title-19">
-      <span class="slide-number">19 / 31</span><div class="slide-inner">
-        <p class="eyebrow">Архітектура</p><h2 id="title-19">MoE: не всі «експерти» працюють одночасно</h2>
+    <section class="slide" id="slide-20" data-steps="1" aria-labelledby="title-20">
+      <span class="slide-number">20 / 32</span><div class="slide-inner">
+        <p class="eyebrow">Архітектура</p><h2 id="title-20">MoE: не всі «експерти» працюють одночасно</h2>
         <div class="split"><div class="card soft"><span class="kicker">Щільна модель</span><div class="process" style="margin:20px 0"><div class="node"><h3>Запит</h3></div><span class="arrow">→</span><div class="node"><h3>Усі шари</h3></div></div><p class="body">Під час кроку генерації працюють потрібні для цієї архітектури параметри.</p></div><div class="card soft"><span class="kicker">Mixture of Experts</span><p class="router-line">Токен → router → top-2 експерти</p><div class="grid three" style="gap:8px;margin:14px 0"><div class="card peach" style="padding:14px"><h3 style="font-size:18px;margin:0">Експерт A</h3></div><div class="card reveal" data-step="1" style="padding:14px"><h3 style="font-size:18px;margin:0">Експерт B</h3></div><div class="card peach" style="padding:14px"><h3 style="font-size:18px;margin:0">Експерт C</h3></div></div><p class="body">Маршрутизатор обирає частину експертів для кожного токена.</p></div></div>
         <p class="takeaway">Менше активних параметрів не означає, що всі ваги безкоштовно зникають із пам’яті.</p>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>У MoE маршрутизатор обирає експертів окремо для кожного токена. Наприклад, у Mixtral 8×7B активні приблизно 13B параметрів на токен із близько 47B загальних. Обчислень менше, але пам’ять для всіх ваг усе одно потрібна.</p><a href="https://arxiv.org/abs/2401.04088" target="_blank" rel="noopener">Mixtral of Experts ↗</a></aside>
 </div>
     </section>
-    <section class="slide" id="slide-20" aria-labelledby="title-20">
-      <span class="slide-number">20 / 31</span><div class="slide-inner">
-        <p class="eyebrow">Локальний запуск</p><h2 id="title-20">Модель, формат і програма запуску — різні речі</h2>
+    <section class="slide" id="slide-21" aria-labelledby="title-21">
+      <span class="slide-number">21 / 32</span><div class="slide-inner">
+        <p class="eyebrow">Локальний запуск</p><h2 id="title-21">Модель, формат і програма запуску — різні речі</h2>
         <div class="process"><div class="node"><h3>Ваги моделі</h3><p>Файли, завантажені з каталогу</p></div><span class="arrow">→</span><div class="node"><h3>Формат</h3><p>Наприклад, MLX або GGUF</p></div><span class="arrow">→</span><div class="node strong"><h3>Середовище</h3><p>oMLX запускає сумісну MLX-модель</p></div><span class="arrow">→</span><div class="node"><h3>Mac</h3><p>Apple Silicon і об’єднана пам’ять</p></div></div>
         <div class="grid two"><div class="card soft"><h3>MLX</h3><p class="body">Екосистема для виконання моделей на Apple Silicon. Для практикуму беремо MLX-версію моделі.</p></div><div class="card soft"><h3>GGUF</h3><p class="body">Інший поширений формат. Його не слід плутати з назвою моделі або автоматично вважати сумісним з oMLX.</p></div></div>
         <p class="source">Джерело щодо можливостей oMLX: <a href="https://github.com/jundot/omlx" target="_blank" rel="noopener">офіційний репозиторій</a>.</p>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>Runtime має розуміти архітектуру, tokenizer, chat template та формат ваг. MLX використовує спільну пам’ять CPU і GPU Apple Silicon; GGUF — контейнер для екосистеми GGML/llama.cpp. Розширення файлу саме по собі не гарантує сумісності.</p><a href="https://github.com/ml-explore/mlx/blob/main/docs/src/usage/unified_memory.rst" target="_blank" rel="noopener">Apple MLX: спільна пам’ять ↗</a></aside>
 </div>
     </section>
-    <section class="slide" id="slide-21" aria-labelledby="title-21">
-      <span class="slide-number">21 / 31</span><div class="slide-inner">
-        <p class="eyebrow">Практичний баланс</p><h2 id="title-21">Локальність дає контроль, але додає відповідальність</h2>
+    <section class="slide" id="slide-22" aria-labelledby="title-22">
+      <span class="slide-number">22 / 32</span><div class="slide-inner">
+        <p class="eyebrow">Практичний баланс</p><h2 id="title-22">Локальність дає контроль, але додає відповідальність</h2>
         <div class="grid two"><div class="card soft"><h3>Що отримуємо</h3><ul class="list"><li>Контроль місця виконання</li><li>Роботу без мережі після завантаження</li><li>Можливість власних правил доступу</li></ul></div><div class="card soft"><h3>Що беремо на себе</h3><ul class="list"><li>Обладнання й оновлення</li><li>Вимірювання якості</li><li>Захист файлів, журналів та інтерфейсів</li></ul></div></div>
         <p class="takeaway">Локальний запуск сам собою не вирішує питання безпеки, прав доступу, ліцензій та якості відповідей.</p>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>Контроль даних потребує конкретних дій: шифрування диска, обмеження доступу до моделей і логів, оновлення застосунку, перевірки джерела ваг та політики резервного копіювання. Повністю локальний inference не захистить дані від помилок конфігурації.</p></aside>
 </div>
     </section>
-    <section class="slide" id="slide-22" data-steps="2" aria-labelledby="title-22">
-      <span class="slide-number">22 / 31</span><div class="slide-inner">
-        <p class="eyebrow">Знання компанії</p><h2 id="title-22">RAG: спочатку знайти, потім відповісти</h2>
+    <section class="slide" id="slide-23" data-steps="2" aria-labelledby="title-23">
+      <span class="slide-number">23 / 32</span><div class="slide-inner">
+        <p class="eyebrow">Знання компанії</p><h2 id="title-23">RAG: спочатку знайти, потім відповісти</h2>
         <div class="index-strip" aria-label="Індексація до запиту"><strong>ДО ЗАПИТУ</strong><span>Документи</span><b>→</b><span>Фрагменти</span><b>→</b><span>Embeddings + індекс</span></div>
         <div class="process"><div class="node"><h3>Документи</h3><p>Підготовлені й доступні за правами</p></div><span class="arrow">→</span><div class="node reveal" data-step="1"><h3>Пошук</h3><p>Відбирає доречні уривки</p></div><span class="arrow">→</span><div class="node strong reveal" data-step="2"><h3>Модель</h3><p>Формулює відповідь із контексту</p></div><span class="arrow">→</span><div class="node reveal" data-step="2"><h3>Перевірка</h3><p>Посилання на джерело</p></div></div>
         <div class="grid two"><div class="card soft"><h3>Навіщо це потрібно</h3><p class="body">Додаємо актуальні знання без повторного навчання ваг моделі.</p></div><div class="card soft"><h3>Що може піти не так</h3><p class="body">Пошук може пропустити джерело; знайдений документ може містити хибні дані або шкідливу інструкцію.</p></div></div>
@@ -386,9 +459,9 @@
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>RAG має два контури. До запиту: розбити документи на фрагменти, створити embeddings та індекс із правами доступу. Під час запиту: знайти й ранжувати уривки, передати їх у контекст і перевірити, чи відповідь справді спирається на джерело.</p><a href="https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview" target="_blank" rel="noopener">Microsoft: RAG pipeline ↗</a></aside>
 </div>
     </section>
-    <section class="slide" id="slide-23" aria-labelledby="title-23">
-      <span class="slide-number">23 / 31</span><div class="slide-inner">
-        <p class="eyebrow">Обираємо інструмент</p><h2 id="title-23">Де саме бракує якості?</h2>
+    <section class="slide" id="slide-24" aria-labelledby="title-24">
+      <span class="slide-number">24 / 32</span><div class="slide-inner">
+        <p class="eyebrow">Обираємо інструмент</p><h2 id="title-24">Де саме бракує якості?</h2>
         <table class="compare"><thead><tr><th>Проблема</th><th>Перший крок</th><th>Що перевірити</th></tr></thead><tbody>
           <tr><td>Нечітке завдання</td><td>Уточнити промпт і приклади</td><td>Чи зрозумілий очікуваний результат</td></tr>
           <tr><td>Мало даних у запиті</td><td>Додати контекст</td><td>Чи вміщуються потрібні дані</td></tr>
@@ -399,63 +472,63 @@
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>Оцінюйте окремо пошук і генерацію. Для пошуку: чи потрапив правильний фрагмент у top-k; для відповіді: точність, опора на джерело, відмова за браком даних, час і вартість. Порівнюйте варіанти на тому самому наборі запитань.</p><a href="https://huggingface.co/docs/evaluate/index" target="_blank" rel="noopener">Hugging Face: оцінювання ↗</a></aside>
 </div>
     </section>
-    <section class="slide" id="slide-24" aria-labelledby="title-24">
-      <span class="slide-number">24 / 31</span><div class="slide-inner split">
-        <div><p class="eyebrow">Кейс · пошук у знаннях</p><h2 id="title-24">Morgan Stanley: знання мають бути доступними в роботі</h2><p class="lead">Асистент допомагає фінансовим радникам знаходити відповіді у внутрішній базі знань.</p><div class="row"><span class="pill fill">Хмарна модель</span><span class="pill">Корпоративний пошук</span></div><p class="source">Джерело: <a href="https://openai.com/index/morgan-stanley/" target="_blank" rel="noopener">кейс OpenAI / Morgan Stanley</a>. Це приклад доступу до знань, не локального запуску.</p></div>
+    <section class="slide" id="slide-25" aria-labelledby="title-25">
+      <span class="slide-number">25 / 32</span><div class="slide-inner split">
+        <div><p class="eyebrow">Кейс · пошук у знаннях</p><h2 id="title-25">Morgan Stanley: знання мають бути доступними в роботі</h2><p class="lead">Асистент допомагає фінансовим радникам знаходити відповіді у внутрішній базі знань.</p><div class="row"><span class="pill fill">Хмарна модель</span><span class="pill">Корпоративний пошук</span></div><p class="source">Джерело: <a href="https://openai.com/index/morgan-stanley/" target="_blank" rel="noopener">кейс OpenAI / Morgan Stanley</a>. Це приклад доступу до знань, не локального запуску.</p></div>
         <div class="card peach"><span class="kicker">Урок для нас</span><p class="quote">Цінність виникає там, де потрібне знання знаходиться в потрібний момент.</p><div class="rule" style="background:#d3ad9b"></div><p class="body">Якість пошуку та оцінювання відповідей важливі не менше за вибір моделі.</p></div>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>За описом OpenAI, Morgan Stanley створила регресійні evals для реальних питань і покращувала retrieval разом із постачальником. Це приклад системної перевірки пошуку та відповіді з GPT-4 у хмарі; наведені результати є заявами учасників кейсу.</p><a href="https://openai.com/index/morgan-stanley/" target="_blank" rel="noopener">OpenAI / Morgan Stanley ↗</a></aside>
 </div>
     </section>
-    <section class="slide" id="slide-25" aria-labelledby="title-25">
-      <span class="slide-number">25 / 31</span><div class="slide-inner split">
-        <div><p class="eyebrow">Кейс · власна інфраструктура</p><h2 id="title-25">Barré Technologies: асистент поруч із документами</h2><p class="lead">Асистент допомагає працювати з документами й бізнес-процесами; IBM описує розгортання на власній інфраструктурі.</p><div class="row"><span class="pill fill">On-premises</span><span class="pill">Документи</span><span class="pill">Права доступу</span></div><p class="source">Джерело: <a href="https://www.ibm.com/case-studies/barre-technologies" target="_blank" rel="noopener">кейс IBM / Barré Technologies</a>. Кількісні результати, якщо наводяться, є заявами IBM та клієнта.</p></div>
+    <section class="slide" id="slide-26" aria-labelledby="title-26">
+      <span class="slide-number">26 / 32</span><div class="slide-inner split">
+        <div><p class="eyebrow">Кейс · власна інфраструктура</p><h2 id="title-26">Barré Technologies: асистент поруч із документами</h2><p class="lead">Асистент допомагає працювати з документами й бізнес-процесами; IBM описує розгортання на власній інфраструктурі.</p><div class="row"><span class="pill fill">On-premises</span><span class="pill">Документи</span><span class="pill">Права доступу</span></div><p class="source">Джерело: <a href="https://www.ibm.com/case-studies/barre-technologies" target="_blank" rel="noopener">кейс IBM / Barré Technologies</a>. Кількісні результати, якщо наводяться, є заявами IBM та клієнта.</p></div>
         <div class="diagram responsive-diagram" role="img" aria-label="Співробітник запитує асистента, той звертається до корпоративних документів у власному контурі"><svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg"><rect x="16" y="115" width="135" height="90" rx="18" class="tile"/><text x="83" y="167" text-anchor="middle" class="label">Людина</text><path d="M155 160h58" class="warm-stroke"/><rect x="220" y="95" width="155" height="130" rx="20" class="warm-tile"/><text x="297" y="153" text-anchor="middle" class="large-label warm-text">Асистент</text><text x="297" y="182" text-anchor="middle" class="sub-label">власний контур</text><path d="M378 160h54" class="warm-stroke"/><rect x="439" y="65" width="65" height="70" rx="9" class="tile"/><rect x="439" y="145" width="65" height="70" rx="9" class="tile"/><rect x="439" y="225" width="65" height="70" rx="9" class="tile"/><text x="472" y="105" text-anchor="middle" class="sub-label">PDF</text><text x="472" y="185" text-anchor="middle" class="sub-label">База</text><text x="472" y="265" text-anchor="middle" class="sub-label">ERP</text></svg><div class="mobile-flow"><span>Людина ставить запитання</span><b>↓</b><span class="warm">Асистент у власному контурі</span><b>↓</b><span>Дозволені документи й системи</span></div></div>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>IBM описує три процеси: обробку рахунків, навігацію регуляторними матеріалами та базою знань. Важлива архітектурна ідея — асистент дістає дані з наявних корпоративних систем і може працювати на власній інфраструктурі; результати продуктивності є заявою кейсу.</p><a href="https://www.ibm.com/case-studies/barre-technologies" target="_blank" rel="noopener">IBM / Barré ↗</a></aside>
 </div>
     </section>
-    <section class="slide" id="slide-26" aria-labelledby="title-26">
-      <span class="slide-number">26 / 31</span><div class="slide-inner split">
-        <div><p class="eyebrow">Кейс · адаптація моделі</p><h2 id="title-26">Impel: LoRA для спеціалізованої комунікації</h2><p class="lead">Компанія адаптувала Llama для задач автомобільних дилерів: підсумків розмов і персоналізованих відповідей.</p><div class="row"><span class="pill fill">Fine-tuning</span><span class="pill">LoRA</span><span class="pill">Хмарне розгортання</span></div><p class="source">Джерело: <a href="https://aws.amazon.com/blogs/machine-learning/impel-enhances-automotive-dealership-customer-experience-with-fine-tuned-llms-on-amazon-sagemaker/" target="_blank" rel="noopener">кейс AWS / Impel</a>. Наведені AWS показники — результати цього кейсу, не гарантія для інших задач.</p></div>
+    <section class="slide" id="slide-27" aria-labelledby="title-27">
+      <span class="slide-number">27 / 32</span><div class="slide-inner split">
+        <div><p class="eyebrow">Кейс · адаптація моделі</p><h2 id="title-27">Impel: LoRA для спеціалізованої комунікації</h2><p class="lead">Компанія адаптувала Llama для задач автомобільних дилерів: підсумків розмов і персоналізованих відповідей.</p><div class="row"><span class="pill fill">Fine-tuning</span><span class="pill">LoRA</span><span class="pill">Хмарне розгортання</span></div><p class="source">Джерело: <a href="https://aws.amazon.com/blogs/machine-learning/impel-enhances-automotive-dealership-customer-experience-with-fine-tuned-llms-on-amazon-sagemaker/" target="_blank" rel="noopener">кейс AWS / Impel</a>. Наведені AWS показники — результати цього кейсу, не гарантія для інших задач.</p></div>
         <div class="card peach"><span class="kicker">Коли цей підхід доречний</span><p class="quote">Коли потрібна повторювана поведінка, а якісні приклади відповідей уже є.</p><div class="rule" style="background:#d3ad9b"></div><p class="body">Цей кейс не про локальний запуск: Impel використовує Amazon SageMaker.</p></div>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>За кейсом AWS, Impel навчала LoRA-адаптацію Llama, застосувала AWQ для inference та розгорнула endpoint у SageMaker з масштабуванням. Команда оцінювала підсумки розмов, follow-up і персоналізацію; цифри точності — її внутрішні вимірювання.</p><a href="https://aws.amazon.com/blogs/machine-learning/impel-enhances-automotive-dealership-customer-experience-with-fine-tuned-llms-on-amazon-sagemaker/" target="_blank" rel="noopener">AWS / Impel ↗</a></aside>
 </div>
     </section>
-    <section class="slide" id="slide-27" aria-labelledby="title-27">
-      <span class="slide-number">27 / 31</span><div class="slide-inner">
-        <p class="eyebrow">Інший тип задачі</p><h2 id="title-27">Jev: замість довгої відповіді — структуроване рішення</h2>
+    <section class="slide" id="slide-28" aria-labelledby="title-28">
+      <span class="slide-number">28 / 32</span><div class="slide-inner">
+        <p class="eyebrow">Інший тип задачі</p><h2 id="title-28">Jev: замість довгої відповіді — структуроване рішення</h2>
         <div class="grid two"><div class="card soft"><h3>Звичайний чат</h3><p class="body">«Поясни ризики цього звернення» → вільний текст, який людина читає й оцінює.</p></div><div class="card peach"><h3>System One / Jev</h3><p class="body">«До якого типу звернення це належить?» → заздалегідь визначені поля, варіанти та оцінка впевненості.</p></div></div>
         <p class="takeaway">Правильний формат поля не означає правильного рішення. Jev — приклад сервісу для структурованих рішень, не модель для цього локального практикуму.</p>
         <p class="source">Джерело: <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev" target="_blank" rel="noopener">TypeSafe AI, Introducing System One Models & Jev</a>. Опис переваг є твердженнями розробника.</p>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>У TypeSafe вхідний стан перетворюється на типізовані поля та ймовірності, а не на довільний текст. Це корисно для класифікації чи маршрутизації, але калібрування впевненості та правильність бізнес-дії потрібно незалежно перевірити на власних даних.</p><a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev" target="_blank" rel="noopener">TypeSafe / Jev ↗</a></aside>
 </div>
     </section>
-    <section class="slide dark-slide" id="slide-28" aria-labelledby="title-28">
-      <span class="slide-number">28 / 31</span><div class="slide-inner split">
-        <div><p class="eyebrow">Каталог і спільнота</p><h2 id="title-28">Hugging Face — місце, де знаходять моделі</h2><p class="lead">Там публікують файли моделей, описи, ліцензії, приклади використання й версії.</p><p class="body muted">Це не сама модель і не гарантія її якості. Сторінку та файли треба читати уважно.</p></div>
+    <section class="slide dark-slide" id="slide-29" aria-labelledby="title-29">
+      <span class="slide-number">29 / 32</span><div class="slide-inner split">
+        <div><p class="eyebrow">Каталог і спільнота</p><h2 id="title-29">Hugging Face — місце, де знаходять моделі</h2><p class="lead">Там публікують файли моделей, описи, ліцензії, приклади використання й версії.</p><p class="body muted">Це не сама модель і не гарантія її якості. Сторінку та файли треба читати уважно.</p></div>
         <div class="card"><span class="kicker">Типова сторінка</span><h3>Назва / автор / версія</h3><div class="rule"></div><p class="body">Model card · Files · License · Examples</p><div class="row"><span class="pill">MLX</span><span class="pill">4-bit</span><span class="pill">Text generation</span></div><p class="source">Каталог: <a href="https://huggingface.co/models" target="_blank" rel="noopener">huggingface.co/models</a></p></div>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>Hugging Face Hub — сховище версійованих репозиторіїв моделей, наборів даних і Spaces. Репозиторій може містити ваги, tokenizer, config, README/model card та приклади. Сама сторінка Hub не означає, що inference виконується на Hugging Face.</p><a href="https://huggingface.co/docs/hub/index" target="_blank" rel="noopener">Hugging Face Hub ↗</a></aside>
 </div>
     </section>
-    <section class="slide" id="slide-29" aria-labelledby="title-29">
-      <span class="slide-number">29 / 31</span><div class="slide-inner">
-        <p class="eyebrow">Читаємо модельну картку</p><h2 id="title-29">Чотири перевірки перед завантаженням</h2>
+    <section class="slide" id="slide-30" aria-labelledby="title-30">
+      <span class="slide-number">30 / 32</span><div class="slide-inner">
+        <p class="eyebrow">Читаємо модельну картку</p><h2 id="title-30">Чотири перевірки перед завантаженням</h2>
         <div class="grid four"><div class="card soft"><div class="num">01</div><h3>Джерело</h3><p class="body">Хто опублікував репозиторій і як він пов’язаний з оригіналом?</p></div><div class="card soft"><div class="num">02</div><h3>Призначення</h3><p class="body">Чат, код, зображення, embedding чи інша задача?</p></div><div class="card soft"><div class="num">03</div><h3>Ліцензія</h3><p class="body">Чи підходять умови для нашого використання?</p></div><div class="card peach"><div class="num">04</div><h3>Файли</h3><p class="body">Чи це MLX-версія, який обсяг і яка квантизація?</p></div></div>
         <p class="source">Приклад для практикуму: <a href="https://huggingface.co/mlx-community/Qwen3-4B-4bit" target="_blank" rel="noopener">mlx-community/Qwen3-4B-4bit</a>. Дані картки потрібно повторно перевіряти перед заняттям.</p>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>У вкладці Files шукайте ваги, tokenizer, config і chat template; у картці — base model, призначення, обмеження та ліцензію. Фіксуйте точний Repo ID і ревізію: конверсія спільноти або новий коміт можуть відрізнятися від оригіналу.</p><a href="https://huggingface.co/docs/hub/model-cards" target="_blank" rel="noopener">Hugging Face: model cards ↗</a></aside>
 </div>
     </section>
-    <section class="slide" id="slide-30" data-steps="1" aria-labelledby="title-30">
-      <span class="slide-number">30 / 31</span><div class="slide-inner">
-        <p class="eyebrow">Від каталогу до відповіді</p><h2 id="title-30">Ось що ми зробимо на практикумі</h2>
+    <section class="slide" id="slide-31" data-steps="1" aria-labelledby="title-31">
+      <span class="slide-number">31 / 32</span><div class="slide-inner">
+        <p class="eyebrow">Від каталогу до відповіді</p><h2 id="title-31">Ось що ми зробимо на практикумі</h2>
         <div class="process"><div class="node"><h3>Hugging Face</h3><p>Обираємо модель і читаємо картку</p></div><span class="arrow">→</span><div class="node"><h3>oMLX</h3><p>Завантажуємо MLX-файли</p></div><span class="arrow">→</span><div class="node strong reveal" data-step="1"><h3>MacBook</h3><p>Запускаємо модель локально</p></div><span class="arrow">→</span><div class="node reveal" data-step="1"><h3>Запит</h3><p>Отримуємо відповідь у чаті</p></div></div>
         <p class="lead">Інтернет потрібен для отримання програми та моделі. Після цього короткий запит можна виконати без мережі.</p>
         <p class="source">Інструмент: <a href="https://github.com/jundot/omlx" target="_blank" rel="noopener">oMLX</a>. Модель: <a href="https://huggingface.co/mlx-community/Qwen3-4B-4bit" target="_blank" rel="noopener">Qwen3-4B-4bit</a>.</p>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>Після завантаження runtime спочатку читає модель і tokenizer, потім робить prefill запиту й decode відповіді. Для автономної перевірки достатньо відключити мережу після завантаження та повторити короткий запит; це не тест корпоративного RAG.</p><a href="https://github.com/jundot/omlx" target="_blank" rel="noopener">oMLX ↗</a></aside>
 </div>
     </section>
-    <section class="slide dark-slide" id="slide-31" aria-labelledby="title-31">
-      <span class="slide-number">31 / 31</span><div class="slide-inner">
-        <p class="eyebrow">Підсумок</p><h2 id="title-31">Обирайте від задачі, не від назви моделі</h2>
+    <section class="slide dark-slide" id="slide-32" aria-labelledby="title-32">
+      <span class="slide-number">32 / 32</span><div class="slide-inner">
+        <p class="eyebrow">Підсумок</p><h2 id="title-32">Обирайте від задачі, не від назви моделі</h2>
         <div class="grid three"><div class="card"><span class="kicker">1 · Дані</span><h3>Що модель повинна знати?</h3><p class="body">Власні документи → перевірте RAG і права доступу.</p></div><div class="card"><span class="kicker">2 · Поведінка</span><h3>Як вона повинна відповідати?</h3><p class="body">Промпт і приклади спершу; fine-tuning — за потреби.</p></div><div class="card peach"><span class="kicker">3 · Розгортання</span><h3>Де це має працювати?</h3><p class="body">Хмара, локально чи змішано — залежно від обмежень.</p></div></div>
         <p class="lead" style="margin-top:35px">Наступний крок — встановити локальну модель і перевірити все власноруч.</p>
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>Для пілоту зафіксуйте: ① власні контрольні запити; ② допустимі джерела й права; ③ цільові точність, затримку та бюджет пам’яті; ④ правила перевірки людиною. Лише після цього порівнюйте конкретні моделі та середовища виконання.</p></aside>
@@ -466,7 +539,7 @@
   <nav class="deck-nav" aria-label="Навігація презентацією">
     <button id="outline-toggle" class="nav-text" type="button" aria-expanded="false" aria-controls="outline">Зміст</button>
     <div class="nav-spacer"></div>
-    <span class="nav-progress" aria-live="polite"><strong id="current-number">01</strong><span class="nav-divider">/</span>31</span>
+    <span class="nav-progress" aria-live="polite"><strong id="current-number">01</strong><span class="nav-divider">/</span>32</span>
     <button id="previous" class="nav-arrow" type="button" aria-label="Попередній розділ">↑</button>
     <button id="next" class="nav-arrow" type="button" aria-label="Наступний розділ">↓</button>
   </nav>
