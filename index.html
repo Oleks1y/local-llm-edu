@@ -34,7 +34,7 @@
 .slide-inner.split>.tech-note{grid-column:1/-1}
 .slide-inner.split{row-gap:18px}
 #slide-26 h2,#slide-27 h2,#slide-28 h2{font-size:clamp(42px,3.65vw,62px);line-height:1.08}
-#slide-24 .card{padding:15px 21px}#slide-24 .process{margin:18px 0}#slide-24 .takeaway{margin-top:12px;padding:13px 20px}#slide-24 .tech-note{margin-top:13px}
+#slide-24 .card{padding:15px 21px}#slide-24 .takeaway{margin-top:10px;padding:11px 17px}#slide-24 .tech-note{margin-top:10px;padding-top:10px}
 #slide-30 .jev-layout{display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:clamp(18px,2.4vw,36px);align-items:center}
 #slide-30 .jev-cards{display:grid;gap:12px}
 #slide-30 .jev-cards .card{padding:clamp(15px,1.4vw,22px);border-radius:16px}
@@ -228,6 +228,61 @@
 #slide-14 .inference-sources{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px 10px}
 @media(max-width:1000px) and (min-width:720px){.inference-flow{grid-template-columns:minmax(0,.9fr) 20px minmax(0,1.9fr) 20px minmax(0,.9fr);gap:6px}.inference-panel{padding:11px}.inference-operations{grid-template-columns:1fr}.inference-panel h3{font-size:19px}.inference-node{padding:9px}.inference-node strong,.inference-operation strong,.inference-next-token strong{font-size:14px}}
 @media(max-width:719px),(max-height:589px){.inference-slide .inference-title{font-size:clamp(38px,9vw,58px);line-height:1.07;margin-bottom:12px}.inference-flow{grid-template-columns:minmax(0,1fr);gap:8px;margin:20px 0 14px}.inference-panel{padding:15px}.inference-panel h3{font-size:23px}.inference-node strong,.inference-operation strong,.inference-next-token strong{font-size:16px}.inference-node span,.inference-operation span{font-size:15px}.inference-connector{height:20px;transform:rotate(90deg)}.inference-operations{grid-template-columns:1fr}.inference-formula{font-size:14px}.inference-residual{font-size:14px}.inference-loop{display:grid;grid-template-columns:1fr 25px 1fr;gap:6px;padding:12px 8px;font-size:13px}.inference-loop>span:nth-child(2){transform:rotate(180deg)}#slide-14 .tech-note{grid-template-columns:1fr;gap:8px;margin-top:22px;padding-top:16px}#slide-14 .tech-note p{font-size:16px;line-height:1.4}#slide-14 .inference-sources{justify-content:flex-start}}
+
+/* RAG: separate the offline indexing pass from the live query path. */
+#slide-24 .slide-inner{width:min(100%,1500px)}
+#slide-24 .eyebrow{margin-bottom:10px}
+#slide-24 h2{font-size:clamp(42px,4.1vw,64px);line-height:1.04;margin-bottom:14px}
+#slide-24 .rag-architecture{display:grid;gap:9px;margin:0 0 10px}
+#slide-24 .rag-track{min-width:0;padding:9px 11px 10px;border:1px solid var(--hair);border-radius:15px;background:var(--fog)}
+#slide-24 .rag-track[data-phase="query"]{background:#fff;border-color:#c8c9cc}
+#slide-24 .rag-track-heading{display:flex;align-items:center;gap:9px;margin:0 0 7px}
+#slide-24 .rag-track-heading>span{display:grid;place-items:center;width:23px;height:23px;flex:0 0 23px;border-radius:50%;background:var(--peach);color:var(--sienna);font-size:12px;font-weight:500}
+#slide-24 .rag-track-heading h3{margin:0;font-size:clamp(15px,1.15vw,18px);line-height:1.15;font-weight:500;letter-spacing:-.02em}
+#slide-24 .rag-flow{display:grid;align-items:stretch;gap:6px;min-width:0}
+#slide-24 .rag-flow-indexing{grid-template-columns:minmax(0,1fr) 16px minmax(0,1fr) 16px minmax(0,1fr) 16px minmax(0,1.15fr)}
+#slide-24 .rag-flow-query{grid-template-columns:minmax(0,1fr) 14px minmax(0,1fr) 14px minmax(0,1fr) 14px minmax(0,1fr) 14px minmax(0,1fr) 14px minmax(0,1fr)}
+#slide-24 .rag-node{display:flex;min-width:0;flex-direction:column;justify-content:center;padding:8px 9px;border:1px solid var(--hair);border-radius:11px;background:#fff}
+#slide-24 .rag-node-emphasis{background:var(--peach);border-color:var(--peach);color:var(--sienna)}
+#slide-24 .rag-node h4{margin:0 0 4px;font-size:clamp(13px,1.05vw,16px);font-weight:500;line-height:1.18;overflow-wrap:anywhere}
+#slide-24 .rag-node p{margin:0;color:var(--muted);font-size:clamp(12px,.94vw,14px);line-height:1.22;overflow-wrap:anywhere}
+#slide-24 .rag-node-emphasis p{color:var(--sienna)}
+#slide-24 .rag-arrow{display:grid;place-items:center;align-self:stretch;color:var(--sienna);font-size:clamp(16px,1.5vw,22px);line-height:1}
+#slide-24 .grid.two{gap:10px}
+#slide-24 .card{padding:11px 15px;border-radius:14px}
+#slide-24 .card h3{font-size:clamp(16px,1.2vw,19px);margin-bottom:4px}
+#slide-24 .card .body{font-size:clamp(13px,1vw,15px);line-height:1.25}
+#slide-24 .takeaway{max-width:none;font-size:clamp(14px,1.05vw,16px);line-height:1.25}
+#slide-24 .tech-note{grid-template-columns:115px minmax(0,1fr) auto;gap:12px}
+#slide-24 .tech-note p{font-size:clamp(12px,.9vw,14px);line-height:1.25}
+#slide-24 .tech-note a{font-size:12px}
+@media(max-width:1024px){
+  #slide-24{height:auto;min-height:100svh;align-items:flex-start;overflow:visible;padding-top:76px}
+  #slide-24 .slide-inner{margin:0 auto}
+  #slide-24 .rag-flow{grid-template-columns:minmax(0,1fr);gap:5px}
+  #slide-24 .rag-node{padding:11px 13px}
+  #slide-24 .rag-node h4{font-size:16px}
+  #slide-24 .rag-node p{font-size:14px;line-height:1.3}
+  #slide-24 .rag-arrow{min-height:17px;transform:rotate(90deg);font-size:18px}
+  #slide-24 .rag-track{padding:12px}
+  #slide-24 .rag-track-heading{margin-bottom:9px}
+  #slide-24 .rag-track-heading h3{font-size:18px}
+  #slide-24 .grid.two{grid-template-columns:1fr}
+  #slide-24 .card{padding:16px 18px}
+  #slide-24 .card h3{font-size:20px}
+  #slide-24 .card .body{font-size:16px}
+  #slide-24 .takeaway{font-size:17px}
+  #slide-24 .tech-note{grid-template-columns:1fr;gap:8px;margin-top:15px}
+  #slide-24 .tech-note p{font-size:15px;line-height:1.35}
+}
+@media(max-width:719px){
+  #slide-24{padding-top:84px}
+  #slide-24 h2{font-size:clamp(38px,9vw,56px);line-height:1.07;margin-bottom:14px}
+  #slide-24 .rag-track-heading h3{font-size:17px}
+  #slide-24 .rag-node h4{font-size:16px}
+  #slide-24 .rag-node p{font-size:14px}
+  #slide-24 .tech-note a{white-space:normal;justify-self:start}
+}
 </style>
 </head>
 <body>
@@ -608,14 +663,34 @@
               <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>Контроль даних потребує конкретних дій: шифрування диска, обмеження доступу до моделей і логів, оновлення застосунку, перевірки джерела ваг та політики резервного копіювання. Повністю локальний inference не захистить дані від помилок конфігурації.</p></aside>
 </div>
     </section>
-    <section class="slide" id="slide-24" data-steps="2" aria-labelledby="title-24">
+    <section class="slide rag-slide" id="slide-24" aria-labelledby="title-24">
       <span class="slide-number">24 / 37</span><div class="slide-inner">
         <p class="eyebrow">Знання компанії</p><h2 id="title-24">RAG: спочатку знайти, потім відповісти</h2>
-        <div class="index-strip" aria-label="Індексація до запиту"><strong>ДО ЗАПИТУ</strong><span>Документи</span><b>→</b><span>Фрагменти</span><b>→</b><span>Embeddings + індекс</span></div>
-        <div class="process"><div class="node"><h3>Документи</h3><p>Підготовлені й доступні за правами</p></div><span class="arrow">→</span><div class="node reveal" data-step="1"><h3>Пошук</h3><p>Відбирає доречні уривки</p></div><span class="arrow">→</span><div class="node strong reveal" data-step="2"><h3>Модель</h3><p>Формулює відповідь із контексту</p></div><span class="arrow">→</span><div class="node reveal" data-step="2"><h3>Перевірка</h3><p>Посилання на джерело</p></div></div>
+        <div class="rag-architecture" role="group" aria-label="Два контури RAG: підготовка індексу та відповідь на запит">
+          <div class="rag-track" data-phase="indexing" role="group" aria-label="Підготовка бази до запиту">
+            <div class="rag-track-heading"><span>01</span><h3>Індексація · до запиту</h3></div>
+            <div class="rag-flow rag-flow-indexing">
+              <article class="rag-node"><h4>Документи</h4><p>Структуровані й неструктуровані</p></article><span class="rag-arrow" aria-hidden="true">→</span>
+              <article class="rag-node"><h4>Витяг і поділ</h4><p>Текст → фрагменти + джерело</p></article><span class="rag-arrow" aria-hidden="true">→</span>
+              <article class="rag-node"><h4>Embedding-модель</h4><p>Кожен фрагмент → вектор</p></article><span class="rag-arrow" aria-hidden="true">→</span>
+              <article class="rag-node rag-node-emphasis"><h4>Векторний індекс</h4><p>Вектори + посилання, джерело й права</p></article>
+            </div>
+          </div>
+          <div class="rag-track" data-phase="query" role="group" aria-label="Пошук і відповідь на запит">
+            <div class="rag-track-heading"><span>02</span><h3>Пошук і відповідь · під час запиту</h3></div>
+            <div class="rag-flow rag-flow-query">
+              <article class="rag-node"><h4>Запит користувача</h4><p>Питання та його права доступу</p></article><span class="rag-arrow" aria-hidden="true">→</span>
+              <article class="rag-node"><h4>Та сама embedding-модель</h4><p>Перетворює питання на вектор</p></article><span class="rag-arrow" aria-hidden="true">→</span>
+              <article class="rag-node"><h4>Пошук top-k</h4><p>Релевантні фрагменти з індексу; фільтр доступу</p></article><span class="rag-arrow" aria-hidden="true">→</span>
+              <article class="rag-node"><h4>Контекст для LLM</h4><p>Питання + відібрані фрагменти</p></article><span class="rag-arrow" aria-hidden="true">→</span>
+              <article class="rag-node"><h4>Генерація LLM</h4><p>Формує відповідь на основі контексту</p></article><span class="rag-arrow" aria-hidden="true">→</span>
+              <article class="rag-node rag-node-emphasis"><h4>Відповідь і джерела</h4><p>Посилання на використані уривки</p></article>
+            </div>
+          </div>
+        </div>
         <div class="grid two"><div class="card soft"><h3>Навіщо це потрібно</h3><p class="body">Додаємо актуальні знання без повторного навчання ваг моделі.</p></div><div class="card soft"><h3>Що може піти не так</h3><p class="body">Пошук може пропустити джерело; знайдений документ може містити хибні дані або шкідливу інструкцію.</p></div></div>
         <p class="takeaway">Для бази рішень і обговорень RAG зазвичай є першою гіпотезою, яку варто перевірити на реальних питаннях.</p>
-              <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>RAG має два контури. До запиту: розбити документи на фрагменти, створити embeddings та індекс із правами доступу. Під час запиту: знайти й ранжувати уривки, передати їх у контекст і перевірити, чи відповідь справді спирається на джерело.</p><a href="https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview" target="_blank" rel="noopener">Microsoft: RAG pipeline ↗</a></aside>
+              <aside class="tech-note" aria-label="Технічна деталь"><span class="tech-label">Технічна деталь</span><p>Embedding запиту має бути сумісним з індексом. Перед передаванням у контекст застосуйте права доступу й обмежте результат top-k фрагментами; окремо оцініть якість пошуку та опору відповіді на джерело.</p><a href="https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview" target="_blank" rel="noopener">Microsoft: RAG pipeline ↗</a></aside>
 </div>
     </section>
     <section class="slide" id="slide-25" aria-labelledby="title-25">
