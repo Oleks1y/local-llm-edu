@@ -50,6 +50,13 @@
 #slide-28 .tech-note a{font-size:12px}
 @media(min-width:720px){#slide-28 h2{font-size:clamp(42px,3.7vw,56px);line-height:1.04;margin-bottom:15px}#slide-28 .jev-cards{gap:10px}#slide-28 .jev-figure figcaption{padding:8px 12px}#slide-28 .takeaway{margin-top:10px;padding:11px 15px}#slide-28 .source{margin-top:9px}#slide-28 .tech-note{margin-top:9px;padding-top:8px}}
 @media(max-width:719px),(max-height:589px){#slide-28 .jev-layout{grid-template-columns:minmax(0,1fr);gap:14px}#slide-28 .jev-cards{gap:9px}#slide-28 .jev-cards .card{padding:18px}#slide-28 .jev-cards .card h3{font-size:21px}#slide-28 .jev-cards .card .body{font-size:16px}#slide-28 .jev-figure figcaption{font-size:14px}#slide-28 .tech-note{grid-template-columns:1fr;gap:8px;margin-top:18px;padding-top:14px}#slide-28 .tech-note p{font-size:16px;line-height:1.4}#slide-28 .tech-note a{font-size:13px}}
+
+.market-table .market-rank-col{width:6%}
+.market-table .market-score-col{width:12%}
+.market-table .market-parameters-col{width:29%}
+.market-table .market-context-col{width:17%}
+@media(min-width:720px){.market-table{font-size:clamp(12px,.84vw,14px)}.market-table .market-meta{font-size:clamp(10px,.66vw,11px)}}
+@media(max-width:719px),(max-height:589px){.market-table tbody tr{grid-template-areas:'rank model score' 'rank parameters context'}.market-table tbody td:nth-child(3)::before{content:'Індекс AA'}.market-table tbody td:nth-child(4){grid-area:parameters;white-space:nowrap;font-size:11px;color:var(--muted)}.market-table tbody td:nth-child(4)::before{content:'Параметри: ';color:var(--muted)}.market-table tbody td:nth-child(5){grid-area:context;justify-self:end;white-space:nowrap;font-size:11px;color:var(--muted)}.market-table tbody td:nth-child(5)::before{content:'Контекст: ';font-size:10px;color:var(--muted)}}
 .dark-slide .tech-note{border-color:#50545a;color:#f2f2f3}.dark-slide .tech-label,.dark-slide .tech-note a{color:var(--peach)}
 @media(min-width:720px){.slide{padding-top:clamp(28px,4vh,58px);padding-bottom:clamp(78px,9vh,112px)}.slide-number{top:clamp(28px,4vh,58px)}h2{font-size:clamp(44px,4.3vw,74px);margin-bottom:20px}.lead{font-size:clamp(22px,1.9vw,30px)}.card{padding:clamp(20px,2vw,34px)}.card .body{font-size:clamp(17px,1.25vw,21px)}.takeaway{margin-top:20px;padding:16px 22px;font-size:clamp(18px,1.4vw,22px)}.process{margin:23px 0}.process .node{padding:18px 17px}.compare td{padding:13px 10px}.compare th{padding:11px 10px}.timeline{margin-top:24px}.timeline .stage{padding-top:16px}.timeline .stage p{font-size:clamp(17px,1.2vw,20px)}}
 @media(max-width:719px),(max-height:589px){.tech-note{grid-template-columns:1fr;gap:8px;margin-top:24px;padding-top:16px}.tech-note p{font-size:17px;line-height:1.4}.tech-note a{white-space:normal;justify-self:start}.slide-inner.split>.tech-note{grid-column:auto}}
@@ -99,6 +106,8 @@
 @media(max-width:719px),(max-height:589px){.market-landscape .eyebrow{margin-bottom:18px}.market-landscape h2{font-size:clamp(38px,9vw,58px);line-height:1.06;margin-bottom:14px}.market-intro{align-items:flex-start;flex-direction:column;gap:9px;margin-bottom:18px}.market-intro p{font-size:16px}.market-grid{grid-template-columns:1fr;gap:12px}.market-panel{padding:12px 10px}.market-panel-title{font-size:12px;margin-bottom:8px}.market-table{display:block;font-size:14px}.market-table thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.market-table tbody{display:grid;gap:6px}.market-table tbody tr{display:grid;grid-template-columns:30px minmax(0,1fr) auto;grid-template-areas:'rank model score' 'rank context access';align-items:center;gap:3px 7px;padding:8px 9px;border:1px solid #dedee0;border-radius:10px;background:#fff}.market-table tbody tr.market-open-row{background:#fff8f4}.market-table tbody th{grid-area:rank;grid-row:1 / span 2;align-self:start;padding:2px 0 0;border:0;font-size:13px}.market-table tbody td{padding:0;border:0}.market-table tbody td:nth-child(2){grid-area:model;min-width:0}.market-table tbody td:nth-child(3){grid-area:score;display:flex;align-items:baseline;gap:5px;text-align:right;font-size:14px}.market-table tbody td:nth-child(3)::before{content:'Індекс';font-size:10px;color:var(--muted);font-weight:400}.market-table tbody td:nth-child(4){grid-area:context;white-space:nowrap;font-size:11px;color:var(--muted)}.market-table tbody td:nth-child(4)::before{content:'Контекст: ';color:var(--muted)}.market-table tbody td:nth-child(5){grid-area:access;justify-self:end;white-space:nowrap}.market-table tbody td:nth-child(5)::before{content:'Доступ: ';font-size:10px;color:var(--muted)}.market-table .market-model{font-size:14px;white-space:normal;overflow:visible;text-overflow:clip}.market-table .market-meta{font-size:11px;line-height:1.25;white-space:normal;overflow:visible;text-overflow:clip;margin-top:2px}.market-access{font-size:10px;padding:2px 5px}.market-note{grid-template-columns:1fr;gap:6px;margin-top:16px;padding-top:14px}.market-note-label{font-size:11px}.market-note p{font-size:15px;line-height:1.4}.market-source{font-size:12px;line-height:1.35}}
 @media(min-width:720px){.market-table{font-size:clamp(12px,.84vw,14px)}.market-table .market-meta{font-size:clamp(10px,.66vw,11px)}}
 @media(min-width:720px) and (max-height:760px){.market-intro{margin-bottom:9px}.market-grid{gap:10px}.market-panel{padding:7px 10px}.market-panel-title{margin-bottom:3px}.market-table thead th{padding:3px}.market-table td,.market-table tbody th{padding:3px}.market-note{margin-top:7px;padding-top:7px}}
+@media(min-width:720px) and (max-height:760px){.market-table td,.market-table tbody th{padding:2px 3px}.market-table thead th{padding:2px 3px}}
+@media(max-width:719px),(max-height:589px){.market-table tbody tr{grid-template-areas:'rank model score' 'rank parameters context'}.market-table tbody td:nth-child(3)::before{content:'Індекс AA'}.market-table tbody td:nth-child(4){grid-area:parameters;white-space:nowrap;font-size:11px;color:var(--muted)}.market-table tbody td:nth-child(4)::before{content:'Параметри: ';color:var(--muted)}.market-table tbody td:nth-child(5){grid-area:context;justify-self:end;white-space:nowrap;font-size:11px;color:var(--muted)}.market-table tbody td:nth-child(5)::before{content:'Контекст: ';font-size:10px;color:var(--muted)}}
 
 .inference-slide .inference-title{font-size:clamp(42px,4vw,66px);line-height:1.05;margin:0 0 8px;max-width:none}
 .inference-subtitle{font-size:clamp(16px,1.2vw,20px);line-height:1.35;color:var(--muted);margin:0}
@@ -232,53 +241,54 @@
     <section class="slide market-landscape" id="slide-5" aria-labelledby="title-5">
       <span class="slide-number">05 / 32</span><div class="slide-inner">
         <p class="eyebrow">Ландшафт моделей · зріз 28 вересня 2026</p>
-        <h2 id="title-5">Топ-20 передових моделей: API й відкриті ваги</h2>
-        <div class="market-intro"><p>Artificial Analysis ранжує конфігурації моделей: одна родина може мати кілька рядків.</p><span class="market-stat">19 закритих <i>·</i> 1 з відкритими вагами</span></div>
+        <h2 id="title-5">Ландшафт LLM: закриті моделі й відкриті ваги</h2>
+        <div class="market-intro"><p>Дві окремі добірки Artificial Analysis Intelligence; ранги всередині кожної таблиці.</p><span class="market-stat">10 закритих <i>·</i> 11 моделей із відкритими вагами</span></div>
         <div class="market-grid">
-          <section class="market-panel" aria-labelledby="market-top-ten">
-            <h3 class="market-panel-title" id="market-top-ten">Місця 01–10</h3>
-            <table class="market-table" aria-label="Конфігурації на місцях 1–10 в індексі Artificial Analysis">
-              <colgroup><col class="market-rank-col"><col><col class="market-score-col"><col class="market-context-col"><col class="market-access-col"></colgroup>
-              <thead><tr><th scope="col">№</th><th scope="col">Модель · розробник</th><th scope="col">Індекс</th><th scope="col">Контекст</th><th scope="col">Доступ</th></tr></thead>
+          <section class="market-panel" aria-labelledby="market-closed-title">
+            <h3 class="market-panel-title" id="market-closed-title">Закриті передові моделі</h3>
+            <table class="market-table" aria-label="Закриті передові моделі з добірки користувача">
+              <colgroup><col class="market-rank-col"><col><col class="market-score-col"><col class="market-parameters-col"><col class="market-context-col"></colgroup>
+              <thead><tr><th scope="col">Ранг</th><th scope="col">Модель · лабораторія</th><th scope="col">Індекс AA</th><th scope="col">Параметри</th><th scope="col">Контекст</th></tr></thead>
               <tbody>
-                <tr><th scope="row">01</th><td><span class="market-model">Claude Opus 5.5</span><span class="market-meta">Anthropic · max, fallback</span></td><td class="market-score">58</td><td>1M</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">02</th><td><span class="market-model">Claude Opus 5.5</span><span class="market-meta">Anthropic · xhigh, fallback</span></td><td class="market-score">56</td><td>1M</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">03</th><td><span class="market-model">Claude Opus 5.5</span><span class="market-meta">Anthropic · high, fallback</span></td><td class="market-score">54</td><td>1M</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">04</th><td><span class="market-model">Claude Fable 5.1</span><span class="market-meta">Anthropic · max, fallback</span></td><td class="market-score">53</td><td>1M</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">05</th><td><span class="market-model">Claude Fable 5.1</span><span class="market-meta">Anthropic · xhigh, fallback</span></td><td class="market-score">53</td><td>1M</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">06</th><td><span class="market-model">GPT-6 Astra</span><span class="market-meta">OpenAI · max</span></td><td class="market-score">53</td><td>1M</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">07</th><td><span class="market-model">GPT-6 Astra</span><span class="market-meta">OpenAI · xhigh</span></td><td class="market-score">52</td><td>1M</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">08</th><td><span class="market-model">Claude Opus 5.5</span><span class="market-meta">Anthropic · medium, fallback</span></td><td class="market-score">51</td><td>1M</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">09</th><td><span class="market-model">Claude Fable 5.1</span><span class="market-meta">Anthropic · high, fallback</span></td><td class="market-score">51</td><td>1M</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">10</th><td><span class="market-model">GPT-6 Astra</span><span class="market-meta">OpenAI · high</span></td><td class="market-score">51</td><td>1M</td><td><span class="market-access">API</span></td></tr>
+                <tr><th scope="row">1</th><td><span class="market-model">Claude Opus 5.5</span><span class="market-meta">Anthropic</span></td><td class="market-score">58</td><td>не розкрито</td><td>1M</td></tr>
+                <tr><th scope="row">2=</th><td><span class="market-model">Claude Fable 5.1</span><span class="market-meta">Anthropic</span></td><td class="market-score">53</td><td>не розкрито</td><td>1M</td></tr>
+                <tr><th scope="row">2=</th><td><span class="market-model">GPT-6 Astra</span><span class="market-meta">OpenAI</span></td><td class="market-score">53</td><td>не розкрито</td><td>1M</td></tr>
+                <tr><th scope="row">4=</th><td><span class="market-model">Muse Spark 1.3</span><span class="market-meta">Meta</span></td><td class="market-score">48</td><td>не розкрито</td><td>1M</td></tr>
+                <tr><th scope="row">4=</th><td><span class="market-model">GPT-6 Sol</span><span class="market-meta">OpenAI</span></td><td class="market-score">48</td><td>не розкрито</td><td>872k</td></tr>
+                <tr><th scope="row">6</th><td><span class="market-model">Grok 4.7</span><span class="market-meta">SpaceXAI</span></td><td class="market-score">46</td><td>не розкрито</td><td>500k</td></tr>
+                <tr><th scope="row">7</th><td><span class="market-model">Qwen3.8 Max (0902)</span><span class="market-meta">Alibaba</span></td><td class="market-score">45</td><td>не розкрито</td><td>984k</td></tr>
+                <tr><th scope="row">8=</th><td><span class="market-model">Grok 4.6</span><span class="market-meta">SpaceXAI</span></td><td class="market-score">44</td><td>не розкрито</td><td>500k</td></tr>
+                <tr><th scope="row">8=</th><td><span class="market-model">Step 5 Preview</span><span class="market-meta">StepFun</span></td><td class="market-score">44</td><td>600B / 27B активних</td><td>1M</td></tr>
+                <tr><th scope="row">10</th><td><span class="market-model">GPT-5.6 Terra</span><span class="market-meta">OpenAI</span></td><td class="market-score">42</td><td>не розкрито</td><td>1M</td></tr>
               </tbody>
             </table>
           </section>
-          <section class="market-panel" aria-labelledby="market-next-ten">
-            <h3 class="market-panel-title" id="market-next-ten">Місця 11–20</h3>
-            <table class="market-table" aria-label="Конфігурації на місцях 11–20 в індексі Artificial Analysis">
-              <colgroup><col class="market-rank-col"><col><col class="market-score-col"><col class="market-context-col"><col class="market-access-col"></colgroup>
-              <thead><tr><th scope="col">№</th><th scope="col">Модель · розробник</th><th scope="col">Індекс</th><th scope="col">Контекст</th><th scope="col">Доступ</th></tr></thead>
+          <section class="market-panel market-open-panel" aria-labelledby="market-open-title">
+            <h3 class="market-panel-title" id="market-open-title">Моделі з відкритими вагами</h3>
+            <table class="market-table" aria-label="Моделі з відкритими вагами з добірки користувача">
+              <colgroup><col class="market-rank-col"><col><col class="market-score-col"><col class="market-parameters-col"><col class="market-context-col"></colgroup>
+              <thead><tr><th scope="col">Ранг</th><th scope="col">Модель · лабораторія</th><th scope="col">Індекс AA</th><th scope="col">Параметри · заг. / активні</th><th scope="col">Контекст</th></tr></thead>
               <tbody>
-                <tr><th scope="row">11</th><td><span class="market-model">GPT-6 Astra</span><span class="market-meta">OpenAI · medium</span></td><td class="market-score">50</td><td>1M</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">12</th><td><span class="market-model">Claude Fable 5.1</span><span class="market-meta">Anthropic · medium, fallback</span></td><td class="market-score">49</td><td>1M</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">13</th><td><span class="market-model">Muse Spark 1.3</span><span class="market-meta">Meta · max</span></td><td class="market-score">48</td><td>1M</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">14</th><td><span class="market-model">GPT-6 Sol</span><span class="market-meta">OpenAI · max</span></td><td class="market-score">48</td><td>872k</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">15</th><td><span class="market-model">Claude Fable 5.1</span><span class="market-meta">Anthropic · low, fallback</span></td><td class="market-score">47</td><td>1M</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">16</th><td><span class="market-model">Grok 4.7</span><span class="market-meta">SpaceXAI · xhigh</span></td><td class="market-score">46</td><td>500k</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">17</th><td><span class="market-model">Grok 4.7</span><span class="market-meta">SpaceXAI · high</span></td><td class="market-score">46</td><td>500k</td><td><span class="market-access">API</span></td></tr>
-                <tr class="market-open-row"><th scope="row">18</th><td><span class="market-model">MiMo-V2.6-Pro</span><span class="market-meta">Xiaomi · 1,0 трлн / 42 млрд активних · MIT</span></td><td class="market-score">46</td><td>1M</td><td><span class="market-access open">Відкриті</span></td></tr>
-                <tr><th scope="row">19</th><td><span class="market-model">GPT-6 Astra</span><span class="market-meta">OpenAI · low</span></td><td class="market-score">46</td><td>1M</td><td><span class="market-access">API</span></td></tr>
-                <tr><th scope="row">20</th><td><span class="market-model">Qwen3.8 Max (0902)</span><span class="market-meta">Alibaba · пропрієтарна</span></td><td class="market-score">45</td><td>984k</td><td><span class="market-access">API</span></td></tr>
+                <tr><th scope="row">1</th><td><span class="market-model">MiMo-V2.6-Pro</span><span class="market-meta">Xiaomi</span></td><td class="market-score">46</td><td>1.0T / 42B</td><td>1M</td></tr>
+                <tr><th scope="row">2</th><td><span class="market-model">GLM-5.3</span><span class="market-meta">Z AI</span></td><td class="market-score">45</td><td>753B / 40B</td><td>1M</td></tr>
+                <tr><th scope="row">3</th><td><span class="market-model">Kimi K3</span><span class="market-meta">Kimi</span></td><td class="market-score">44</td><td>2.8T / 104B</td><td>≈1.05M</td></tr>
+                <tr><th scope="row">4</th><td><span class="market-model">GLM-5.3 Flash</span><span class="market-meta">Z AI</span></td><td class="market-score">42</td><td>320B / 18B</td><td>1M</td></tr>
+                <tr><th scope="row">5=</th><td><span class="market-model">Qwen3.8 2.4T A95B</span><span class="market-meta">Alibaba</span></td><td class="market-score">40</td><td>2.4T / 95B</td><td>984k</td></tr>
+                <tr><th scope="row">5=</th><td><span class="market-model">Qwen3.8-Flash-Next</span><span class="market-meta">Alibaba</span></td><td class="market-score">40</td><td>180B / 6B</td><td>256k</td></tr>
+                <tr><th scope="row">7</th><td><span class="market-model">DeepSeek V4.1 Flash</span><span class="market-meta">DeepSeek</span></td><td class="market-score">39</td><td>552B / 16B</td><td>1M</td></tr>
+                <tr><th scope="row">8</th><td><span class="market-model">MiMo-V2.6-Flash</span><span class="market-meta">Xiaomi</span></td><td class="market-score">38</td><td>309B / 15B</td><td>1M</td></tr>
+                <tr><th scope="row">9</th><td><span class="market-model">DeepSeek V4 Pro 0813</span><span class="market-meta">DeepSeek</span></td><td class="market-score">36</td><td>1.6T / 49B</td><td>1M</td></tr>
+                <tr><th scope="row">10=</th><td><span class="market-model">Qwen3.8 27B</span><span class="market-meta">Alibaba</span></td><td class="market-score">34</td><td>27B</td><td>256k</td></tr>
+                <tr><th scope="row">10=</th><td><span class="market-model">Motif 3</span><span class="market-meta">Motif Technologies</span></td><td class="market-score">34*</td><td>314B / 13.2B</td><td>262k</td></tr>
               </tbody>
             </table>
           </section>
         </div>
         <aside class="market-note" aria-label="Як правильно читати рейтинг">
           <span class="market-note-label">Як читати</span>
-          <p>Індекс v4.3.2 зводить 10 переважно англомовних тестів, а не оцінює ваші українські задачі чи локальну швидкість. Повторні рядки — різні конфігурації однієї моделі; fallback означає резервний режим. API — доступ до закритої моделі через постачальника. «Відкриті ваги» не скасовують перевірку ліцензії; розмір закритих моделей не розкрито.</p>
+          <p>Ранги наведено окремо для кожної добірки; контекст подано в токенах. Індекс AA й довжина контексту самі по собі не показують якість на ваших даних, швидкість або вимоги до локальної пам’яті. * Біля Motif 3 зірочку збережено з наданої таблиці; пояснення до неї не було.</p>
         </aside>
-        <p class="source market-source">Джерела: <a href="https://artificialanalysis.ai/leaderboards/models" target="_blank" rel="noopener">рейтинг</a> · <a href="https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-3" target="_blank" rel="noopener">методика v4.3.2</a> · <a href="https://artificialanalysis.ai/models/mimo-v2-6-pro" target="_blank" rel="noopener">MiMo</a> · <a href="https://artificialanalysis.ai/models/qwen3-8-max" target="_blank" rel="noopener">Qwen Max</a>.</p>
+        <p class="source market-source">Джерела: <a href="https://artificialanalysis.ai/leaderboards/models" target="_blank" rel="noopener">рейтинг Artificial Analysis</a> · <a href="https://artificialanalysis.ai/methodology/intelligence-benchmarking" target="_blank" rel="noopener">методика індексу</a>. Значення перенесено з наданої таблиці й окремо не переперевірено.</p>
       </div>
     </section>
     <section class="slide" id="slide-6" aria-labelledby="title-6">
